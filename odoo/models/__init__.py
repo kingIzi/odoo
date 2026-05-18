@@ -4,6 +4,7 @@
 
 # TODO we should only expose *Model objects, TableObjects, maybe check_comp*
 
+from odoo.orm.model_classes import is_model_class, is_model_definition
 from odoo.orm.models import (
     LOG_ACCESS_COLUMNS,
     MAGIC_COLUMNS,
@@ -20,7 +21,6 @@ from odoo.orm.models import (
     regex_order,
     to_record_ids,
 )
-from odoo.orm.model_classes import is_model_class, is_model_definition
 from odoo.orm.models_transient import TransientModel
 from odoo.orm.table_objects import Constraint, Index, UniqueIndex
 from odoo.orm.utils import (
