@@ -1,0 +1,7 @@
+[project]
+name = "odoo"
+version = "0.1.0"
+
+
+[tool.uv.workspace]
+members = ["../../my_addons/strat"]
